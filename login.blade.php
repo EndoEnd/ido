@@ -35,7 +35,9 @@
             </dl>
         </form>
 
-       
+        <div class="new-registration">
+            <a href="{{ route('registration') }}" class="btn btn-primary">新規登録</a>
+        </div>
 
     @include('partials.footer')
 </body>
