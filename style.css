@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+/* ログイン画面 */
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 水平方向の中央寄せ */
+    min-height: 100vh;      /* ビューポートの高さ全体を使用 */
+    background-color: #f0f0f0; /* 背景色の設定 */
+}
+
+header{
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+header p{
+    display:block;
+    margin:0;
+    padding:0;
+}
+
+.anton-regular {
+    font-family: "Anton", sans-serif;
+    font-weight: 200;
+    font-size: 120px;
+    font-style: normal;
+    margin: 0; /* 余白をなくす */
+    padding: 0;
+    text-align: center;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.login p {
+    margin: 0; /* 余白をなくす */
+}
+
+.tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* dd要素を中央に寄せる */
+}
+
+.tab dd {
+    margin: 10px 0; /* 上下に少し余白を設定 */
+    width: 100%; /* dd要素を全幅に設定 */
+    max-width: 300px; /* dd要素の最大幅を300pxに設定 */
+}
+
+.tab dd input{
+    width: 100%; /* inputとbuttonをdd要素の幅に合わせる */
+    height:30px;
+    max-width: 300px; /* 最大幅を300pxに設定 */
+    box-sizing: border-box; /* パディングやボーダーのサイズを含めて幅を計算 */
+    border-radius:20px;
+    background-color:white;
+}
+
+.tab dd button {
+    margin-top:20px;
+    width: 100%; /* inputとbuttonをdd要素の幅に合わせる */
+    height:30px;
+    max-width: 100px; /* 最大幅を300pxに設定 */
+    box-sizing: border-box; /* パディングやボーダーのサイズを含めて幅を計算 */
+    border-radius:20px;
+    background-color:#5e5e5e;
+    color:white;
+}
+
+.tab dd button:hover{
+    background-color:rgb(200, 198, 198);
+    color:black;
+}
+
+
+.new-registration{
+    margin-top:50px;
+    display:flex;
+    justify-content: center;
+
+}
+
+.new-registration a{
+ color:#5e5e5e;
+}
+
+.new-registration a:hover{
+    color:rgb(200, 198, 198);
+}
+
+footer{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    border-top:1px solid black;
+    margin-top:80px;
+}
+
+footer img{
+    margin:10px 0;
+    width:100%;
+    max-width:300px;
+    margin-top:30px;
+}
+footer p {
+    margin: 0; /* 余白をなくす */
+    padding: 10px 0; /* 必要に応じて少し余白を追加 */
+    text-align: center;
+    font-size: 14px; /* フッターのテキストサイズを調整 */
+}
